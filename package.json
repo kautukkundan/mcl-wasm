@@ -1,6 +1,6 @@
 {
   "name": "react-mcl-wasm",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "mcl - fork of original to be compatible with react; A portable and fast pairing-based cryptography library for react.js by WebAssembly",
   "main": "mcl.js",
   "scripts": {
