@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/herumi/mcl-wasm.png)](https://travis-ci.org/herumi/mcl-wasm)
+
 # A portable and fast pairing-based cryptography library for Node.js by WebAssembly
 
 # Abstract
@@ -6,18 +7,27 @@
 see [mcl](https://github.com/herumi/mcl)
 
 ## News
+
+- Added support for reactJS
 - add `mulVec(xVec, yVec)` where xVec is an array of G1 or G2 and yVec is an array of Fr, which returns `sum of xVec[i] yVec[i]`.
-- G1.setHashOf is compatible with [hash-to-curve-09 BLS12381G1_XMD:SHA-256_SSWU_RO_](https://www.ietf.org/id/draft-irtf-cfrg-hash-to-curve-09.html#name-bls12381g1_xmdsha-256_sswu_)
+- G1.setHashOf is compatible with [hash-to-curve-09 BLS12381G1*XMD:SHA-256_SSWU_RO*](https://www.ietf.org/id/draft-irtf-cfrg-hash-to-curve-09.html#name-bls12381g1_xmdsha-256_sswu_)
 - support only BN254, ZKSNARK, BLS12-381 to remove mcl_c512.js
 - add mcl.precomputedMillerLoop2 and mcl.precomputedMillerLoop2mixed
 
 ## for Node.js
+
 node test.js
 
 ## browser demo
+
 [ID-based encryption](https://herumi.github.io/mcl-wasm/ibe-demo.html)
 
 # usages
+
+## For React
+
+Please copy and keep `the mcl_c384_256.wasm` file in the public directory.
+Will update this later.
 
 ## init
 
@@ -58,6 +68,7 @@ mcl.setETHserialization(true)
 ```
 
 ## deserialization
+
 ```
 /*
   it is big cost to to verify the order
@@ -77,8 +88,10 @@ http://opensource.org/licenses/BSD-3-Clause
 
 # History
 
+2020/Nov/8 add react compatibility
 2019/Jan/31 add Fp.mapToG1
 
 # Author
 
 光成滋生 MITSUNARI Shigeo(herumi@nifty.com)
+Kautuk Kundan (kautukkundan@gmail.com)
